@@ -64,6 +64,7 @@ export default function Page() {
       utterance.voice = selectedVoice;
       utterance.rate = rate;
       utterance.pitch = pitch;
+      utterance.lang = selectedVoice.lang;
       synth.speak(utterance);
       setIsSpeaking(true);
     }
